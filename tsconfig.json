@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* customs */
+    "paths": {
+      "@node_modules/*": ["./node_modules/*"],
+      "@app/*": ["./src/*"],
+      "@sass/*": ["./src/sass/*"],
+      // "@app_components/*": ["./src/app/components/*"],
+      // "@app_atoms/*": ["./src/app/components/atoms/*"],
+      // "@app_molecules/*": ["./src/app/components/molecules/*"],
+      // "@app_modules/*": ["./src/app/modules/*"],
+      // "@app_hooks/*": ["./src/app/hooks/*"],
+      // "@app_context/*": ["./src/app/context/*"],
+      // "@app_services/*": ["./src/app/services/*"],
+      // "@app_pages/*": ["./src/app/pages/*"],
+      // "@app_utils/*": ["./src/app/utils/*"],
+      // "crypto": ["./node_modules/crypto-js"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    // "./src/trivia/index.d.ts",
+  ]
+}
